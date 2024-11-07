@@ -5,7 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas y Formulariost</title>
 </head>
-<body>
+
     <h1>Tablas y formularios</h1>
+
+    <table border="1px">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+        </tr>
+
+        <tr>
+            <td>Amadeus</td>
+            <td>Esparza</td>
+            <td>amadeusesparza@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Patches</td>
+            <td>cat</td>
+            <td>kitty@gmail.com</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <h2>Formularios</h2>
+
+    <form action="archivo_que_procesa_los_datos.php"></form>
+        <!--Atributos aceptados por el input de text: placeholder, value, required, disabled, name-->
+        <label for="nombre_de_usuario">Nombre:</label>
+        <input name="nombre_de_usuario" type="text" placeholder="Nombre" required>
+
+        <label for="correo">Email:</label>
+        <input name="correo" type="email" placeholder="e-mail" required>
+
+        <br>
+
+        <label for="password">Constraseña:</label>
+        <input name="password" type="password" placeholder="Contraseña" required>
+
+        <br><br>
+
+        <label for="comentarios">Comentarios:</label>
+        <br>
+        <textarea name="comentarios" rows="6" cols="50"></textarea>
+
+        <br><br>
+
+        <!--Select-->
+    <label for="sabores"> Sabores</label>
+    <br>
+    <select name="sabores">
+        <option value="" selected disabled hidden>Selecciona una opción</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Fresa">Fresa</option>
+    </select>
+ 
+        <br><br>
+        <!--Radio-->
+        <label for="genero">genero</label>
+        <br>
+        <input type="radio" name="genero"> Masculino
+        <input type="radio" name="genero"> Femenino
+
+        <br><br>
+        <!--Checkbox-->
+        <label for="terminos">Aceptas nuestros términos y condiciones:</label>
+        <br>
+        <input type="checkbox"> Si
+
+        <!--Enviar y submit-->
+       <button type="submit">Enviar</button>
+</form>
 </body>
 </html>
